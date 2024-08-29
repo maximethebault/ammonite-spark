@@ -25,7 +25,7 @@ jobs:
     - run: .github/scripts/gpg-setup.sh
       env:
         PGP_SECRET: ${{ secrets.PUBLISH_SECRET_KEY }}
-    - run: ./mill -i assembly
+    - run: ./mill resolve _
       shell: bash
     - name: Archive production artifacts
       uses: actions/upload-artifact@v4
