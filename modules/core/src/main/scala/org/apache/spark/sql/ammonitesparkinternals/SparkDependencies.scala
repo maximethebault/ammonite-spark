@@ -26,7 +26,7 @@ object SparkDependencies {
     )
 
   private def sparkYarnClass                = "org.apache.spark.deploy.yarn.Client"
-  private def sparkExecutorClassLoaderClass = "org.apache.spark.repl.ExecutorClassLoader"
+  private def sparkExecutorClassLoaderClass = "org.apache.spark.executor.ExecutorClassLoader"
 
   def sparkHiveFound(): Boolean =
     sparkHiveClasses.exists { className =>
