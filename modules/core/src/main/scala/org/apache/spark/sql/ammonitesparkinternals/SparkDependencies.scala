@@ -10,6 +10,7 @@ import scala.collection.mutable
 import scala.util.Properties.{versionNumberString => scalaVersion}
 import scala.util.Try
 
+
 object SparkDependencies {
 
   private val sbv =
